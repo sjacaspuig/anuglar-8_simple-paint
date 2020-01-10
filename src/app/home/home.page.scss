@@ -1,1 +1,96 @@
 
+.dashboard {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 88vw;
+  min-width: 848px;
+  padding: 64px;
+}
+
+.dashboard__content--left {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard__content--right {
+  flex: 1 1;
+  max-width: 160px;
+  min-width: 140px;
+  margin-left: 16px;
+}
+
+.canvas {
+  border: 2px solid #111111;
+}
+
+.option__unredo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option__unredo--button {
+  font-size: 12px;
+  color: #2b2b2b;
+  width: 48%;
+  border-radius: 4px;
+  height: 32px;
+}
+
+.option__colors {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.option__colors--button {
+  flex: 1 1 12.5%;
+  outline: none;
+  cursor: pointer;
+  height: 20px;
+  margin: 4px;
+  border: 1px solid #00000026;
+  border-radius: 50%;
+
+  &:hover, &:active {
+    border: 2px solid #00000055;
+  }
+}
+
+
+.option__brushes {
+  padding-top: 4px
+}
+
+.option__brushes--button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 4px;
+  padding: 4px;
+  height: 32px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  &:hover, &:active {
+    .option__button--brush {
+      background: #080808;
+    }
+  }
+}
+
+.option__button--brush {
+  display: block;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
+
+  
